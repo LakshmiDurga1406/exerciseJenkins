@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -16,6 +17,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.testng.Assert;
 
 import io.cucumber.java.Before;
@@ -30,10 +32,11 @@ import io.cucumber.java.en.When;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import src.test.java.pageObjects.AddcustomerPage;
-import src.test.java.pageObjects.LoginPage;
-import src.test.java.pageObjects.SearchCustomerPage;
-import src.test.java.utility.Constants;
+//import junit.framework.Assert;
+import pageObjects.AddcustomerPage;
+import pageObjects.LoginPage;
+import pageObjects.SearchCustomerPage;
+import utility.Constants;
 
 public class Stepdef extends BaseClass
 {

@@ -22,7 +22,7 @@ import io.cucumber.testng.CucumberOptions;
 					features=".\\Genpact_Features\\Customers1.feature",
 //					features=".\\Genpact_Features\\Customers2.feature",
 					glue="stepDefinitions",
-					monochrome=true,
+					monochrome=false,
 					tags= "@sanity",
 					dryRun = false,
 					//tags= "@regression",
