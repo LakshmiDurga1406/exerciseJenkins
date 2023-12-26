@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.453">
+    <testcase classname="Customers" name="Add new Customer" time="0.125">
+        <failure message="config.properties (The system cannot find the file specified)" type="java.io.FileNotFoundException">
+            <![CDATA[Given User Launch Chrome browser............................................skipped
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............skipped
+And User enters Email as "admin@yourstore.com" and Password as "admin"......skipped
+And Click on Login..........................................................skipped
+Then User can view Dashboad.................................................skipped
+When User click on customers Menu...........................................skipped
+And click on customers Menu Item............................................skipped
+And click on Add new button.................................................skipped
+Then User can view Add new customer page....................................skipped
+When User enter customer info...............................................skipped
+And click on Save button....................................................skipped
+Then User can view confirmation message "The new customer has been added successfully.".skipped
+When User click on Log out link.............................................skipped
+Then Page Title should be "Your store. Login"...............................skipped
+And close browser...........................................................skipped
+
+StackTrace:
+java.io.FileNotFoundException: config.properties (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at stepDefinitions.Stepdef.setup(Stepdef.java:54)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

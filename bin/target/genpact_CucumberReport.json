@@ -1,0 +1,234 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-12-22T11:24:03.612Z",
+        "before": [
+          {
+            "result": {
+              "error_message": "java.io.FileNotFoundException: config.properties (The system cannot find the file specified)\r\n\tat java.base/java.io.FileInputStream.open0(Native Method)\r\n\tat java.base/java.io.FileInputStream.open(FileInputStream.java:219)\r\n\tat java.base/java.io.FileInputStream.\u003cinit\u003e(FileInputStream.java:157)\r\n\tat java.base/java.io.FileInputStream.\u003cinit\u003e(FileInputStream.java:112)\r\n\tat stepDefinitions.Stepdef.setup(Stepdef.java:54)\r\n",
+              "duration": 78128400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "stepDefinitions.Stepdef.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Add new Customer",
+        "description": "",
+        "id": "customers;add-new-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User Launch Chrome browser",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_Launch_Chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User opens URL \"http://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://admin-demo.nopcommerce.com/login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepDefinitions.Stepdef.user_opens_URL(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 59
+                }
+              ],
+              "location": "stepDefinitions.Stepdef.user_enters_Email_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Click on Login",
+            "match": {
+              "location": "stepDefinitions.Stepdef.click_on_Login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User can view Dashboad",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_can_view_Dashboad()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User click on customers Menu",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_click_on_customers_Menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "click on customers Menu Item",
+            "match": {
+              "location": "stepDefinitions.Stepdef.click_on_customers_Menu_Item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "click on Add new button",
+            "match": {
+              "location": "stepDefinitions.Stepdef.click_on_Add_new_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User can view Add new customer page",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_can_view_Add_new_customer_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User enter customer info",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_enter_customer_info()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "click on Save button",
+            "match": {
+              "location": "stepDefinitions.Stepdef.click_on_Save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User can view confirmation message \"The new customer has been added successfully.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The new customer has been added successfully.\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinitions.Stepdef.user_can_view_confirmation_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User click on Log out link",
+            "match": {
+              "location": "stepDefinitions.Stepdef.user_click_on_Log_out_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "Page Title should be \"Your store. Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your store. Login\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinitions.Stepdef.page_Title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "close browser",
+            "match": {
+              "location": "stepDefinitions.Stepdef.close_browser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Customers",
+    "description": "",
+    "id": "customers",
+    "keyword": "Feature",
+    "uri": "file:Genpact_Features/Customers1.feature",
+    "tags": []
+  }
+]

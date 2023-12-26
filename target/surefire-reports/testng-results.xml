@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-22T16:54:02 IST" name="Surefire suite" finished-at="2023-12-22T16:54:04 IST" duration-ms="1703">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@7dcf94f8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-22T16:54:02 IST" name="Surefire test" finished-at="2023-12-22T16:54:04 IST" duration-ms="1703">
+      <class name="testRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunner.TestRunner@7dcf94f8]" started-at="2023-12-22T16:54:02 IST" name="setUpClass" finished-at="2023-12-22T16:54:03 IST" duration-ms="984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@7dcf94f8]" started-at="2023-12-22T16:54:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-22T16:54:03 IST" duration-ms="360" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add new Customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customers]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[config.properties (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: config.properties (The system cannot find the file specified)
+at java.base/java.io.FileInputStream.open0(Native Method)
+at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+at stepDefinitions.Stepdef.setup(Stepdef.java:54)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@7dcf94f8]" started-at="2023-12-22T16:54:03 IST" name="tearDownClass" finished-at="2023-12-22T16:54:04 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
